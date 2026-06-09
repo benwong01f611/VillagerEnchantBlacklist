@@ -1,0 +1,17 @@
+name: VillagerEnchantBlacklist
+version: '${version}'
+
+main: io.benwong01f611.villagerenchantblacklist.VillagerEnchantBlacklist
+api-version: '26.1.2'
+load: STARTUP
+
+commands:
+  veb:
+    description: Main command for Villager Enchantment Blacklist.
+    permission: veb.admin
+    usage: /veb reload
+
+permissions:
+  veb.admin:
+    description: Allows reloading the plugin configuration.
+    default: op
