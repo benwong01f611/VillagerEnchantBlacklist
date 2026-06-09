@@ -57,7 +57,7 @@ public class Blacklist implements Listener {
                     continue;
                 }
 
-                if(level < maxLevel){
+                if(level != maxLevel){
                     // Basically copy the enchantments and set its level to max level
                     newEnchantmentMeta.addStoredEnchant(enchantment, maxLevel, true);
                     modified = true;

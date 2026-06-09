@@ -1,0 +1,67 @@
+# VillagerEnchantBlacklist
+Blacklists specific enchantments and always give maximum level to enchantment books.
+
+This plugin was written halfly by Gemini so it might have bugs. Feel free to open issues or pull requests.
+
+## How to use
+Disable specific enchantments by adding them to key `disable`
+
+Note: Vanilla Minecraft Librarian does not provide Soul Speed, Swift Sneak nor Wind Burst
+
+`config.yml`
+```yaml
+config:
+  # Enchantments added to this list will be completely blocked from villager trades.
+  disable:
+    - binding_curse
+    - vanishing_curse
+    - soul_speed
+    - swift_sneak
+    - wind_burst
+  # Define the maximum level a villager can offer for an enchantment.
+  # If a villager rolls a level higher than defined here, it will automatically cap at this number.
+  max_level:
+    aqua_affinity: 1
+    bane_of_arthropods: 5
+    binding_curse: 1
+    blast_protection: 4
+    breach: 4
+    channeling: 1
+    density: 5
+    depth_strider: 3
+    efficiency: 5
+    feather_falling: 4
+    fire_aspect: 2
+    fire_protection: 4
+    flame: 1
+    fortune: 3
+    frost_walker: 2
+    impaling: 5
+    infinity: 1
+    knockback: 2
+    looting: 3
+    loyalty: 3
+    luck_of_the_sea: 3
+    lure: 3
+    lunge: 3
+    mending: 1
+    multishot: 1
+    piercing: 4
+    power: 5
+    projectile_protection: 4
+    protection: 4
+    punch: 2
+    quick_charge: 3
+    respiration: 3
+    riptide: 3
+    sharpness: 5
+    silk_touch: 1
+    smite: 5
+    soul_speed: 3
+    sweeping_edge: 3
+    swift_sneak: 3
+    thorns: 3
+    unbreaking: 3
+    vanishing_curse: 1
+    wind_burst: 3
+```
